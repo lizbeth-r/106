@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+
+section{
+    padding: 20px;
+}
+
+#list{
+    flex: 2;
+}
+#form{
+    flex: 1;
+}
+
+.task{
+    margin: 10px 20px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid #333;
+}
+
+.task .info{
+    flex: 3;
+    color: #666;
+}
+
+.task .status{
+    flex: 1; 
+    text-align: center;
+    color: #1e90ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.task .date-budget{
+    flex: 1;
+    color: #888;
+}
