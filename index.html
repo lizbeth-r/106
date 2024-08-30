@@ -14,11 +14,14 @@
     </h1>
 
     <main>
-        <section id="list" class="border bg-primary bg-opacity-10">
-            GET section
+        <section id="list" class="border bg-primary bg-opacity-10 overflow-auto">
+            <div class="list-flex">
+                <h3>Your Tasks</h3>
+                <button id="btnDeleteAll" class="btn btn-primary">Delete All Tasks</button>
+            </div>
         </section>
 
-        <button id="btnForm" class="btn btn-primary">Form</button>
+        <button id="btnForm" class="btn btn-primary">Toggle Form</button>
 
         <section id="form" class="border">
             <div class="mt-2">
@@ -32,7 +35,7 @@
             </div>
 
             <div class="mt-4">
-                <label for="txtColor" class="form-label">Colo:</label>
+                <label for="txtColor" class="form-label">Color:</label>
                 <input type="color" id="txtColor" class="form-control">
             </div>
 
@@ -63,7 +66,7 @@
         </section>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
     <script src="./script/task.js"></script>
     <script src="./script/taskManager.js"></script>
 </body>

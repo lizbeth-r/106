@@ -22,19 +22,41 @@ section{
     flex: 1;
 }
 
+.list-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.list-flex h3{
+    color: #1e90ff;
+    font-weight: bold;
+}
+
 .task{
     margin: 10px 20px;
     padding: 10px;
     display: flex;
     border: 1px solid #333;
 }
+.task-container{
+    margin: 15px 0;
+    padding: 10px;
+    display: flex;
+    border-left: 4px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
-.task .info{
+.task-container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-container .info{
     flex: 3;
     color: #666;
 }
 
-.task .status{
+.task-container .status{
     flex: 1; 
     text-align: center;
     color: #1e90ff;
@@ -44,7 +66,8 @@ section{
     font-weight: bold;
 }
 
-.task .date-budget{
+.task-container .date-budget{
     flex: 1;
     color: #888;
 }
+
